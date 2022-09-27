@@ -1,0 +1,226 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_marginStart="24dp"
+        android:layout_marginTop="24dp"
+        android:layout_marginEnd="24dp"
+        android:layout_marginBottom="24dp"
+        android:orientation="vertical"
+        android:weightSum="13"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent">
+
+        <androidx.constraintlayout.widget.ConstraintLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_weight="1">
+
+            <EditText
+                android:id="@+id/rutInput"
+                android:layout_width="match_parent"
+                android:layout_height="0dp"
+                android:layout_margin="0dp"
+                android:focusable="false"
+                android:inputType="none"
+                android:text="@string/rutInputPlaceholder"
+                app:layout_constraintBottom_toBottomOf="parent"
+                app:layout_constraintEnd_toEndOf="parent"
+                app:layout_constraintStart_toStartOf="parent"
+                app:layout_constraintTop_toTopOf="parent" />
+
+            <ImageButton
+                android:id="@+id/imageButton2"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:background="@drawable/rounded_button"
+                android:onClick="padBackspaceClick"
+                android:padding="10dp"
+                app:layout_constraintBottom_toBottomOf="parent"
+                app:layout_constraintEnd_toEndOf="@+id/rutInput"
+                app:layout_constraintTop_toTopOf="@+id/rutInput"
+                app:srcCompat="@drawable/ic_outline_backspace_24" />
+
+        </androidx.constraintlayout.widget.ConstraintLayout>
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_weight="2"
+            android:orientation="horizontal"
+            android:weightSum="3">
+
+            <Button
+                android:id="@+id/padBtn1"
+                style="@style/Ctrl.Button.Pad"
+                android:layout_width="wrap_content"
+                android:layout_height="match_parent"
+                android:layout_weight="1"
+                android:insetLeft="0dp"
+                android:insetRight="3dp"
+                android:onClick="padButtonClick"
+                android:text="@string/pad1" />
+
+            <Button
+                android:id="@+id/padBtn2"
+                style="@style/Ctrl.Button.Pad"
+                android:layout_width="wrap_content"
+                android:layout_height="match_parent"
+                android:layout_weight="1"
+                android:insetLeft="3dp"
+                android:insetRight="3dp"
+                android:onClick="padButtonClick"
+                android:text="@string/pad2" />
+
+            <Button
+                android:id="@+id/padBtn3"
+                style="@style/Ctrl.Button.Pad"
+                android:layout_width="wrap_content"
+                android:layout_height="match_parent"
+                android:layout_weight="1"
+                android:insetLeft="3dp"
+                android:insetRight="0dp"
+                android:onClick="padButtonClick"
+                android:text="@string/pad3" />
+        </LinearLayout>
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_weight="2"
+            android:orientation="horizontal"
+            android:weightSum="3">
+
+            <Button
+                android:id="@+id/padBtn4"
+                style="@style/Ctrl.Button.Pad"
+                android:layout_width="wrap_content"
+                android:layout_height="match_parent"
+                android:layout_weight="1"
+                android:insetLeft="0dp"
+                android:insetRight="3dp"
+                android:onClick="padButtonClick"
+                android:text="@string/pad4" />
+
+            <Button
+                android:id="@+id/padBtn5"
+                style="@style/Ctrl.Button.Pad"
+                android:layout_width="wrap_content"
+                android:layout_height="match_parent"
+                android:layout_weight="1"
+                android:insetLeft="3dp"
+                android:insetRight="3dp"
+                android:onClick="padButtonClick"
+                android:text="@string/pad5" />
+
+            <Button
+                android:id="@+id/padBtn6"
+                style="@style/Ctrl.Button.Pad"
+                android:layout_width="wrap_content"
+                android:layout_height="match_parent"
+                android:layout_weight="1"
+                android:insetLeft="3dp"
+                android:insetRight="0dp"
+                android:onClick="padButtonClick"
+                android:text="@string/pad6" />
+        </LinearLayout>
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_weight="2"
+            android:orientation="horizontal"
+            android:weightSum="3">
+
+            <Button
+                android:id="@+id/padBtn7"
+                style="@style/Ctrl.Button.Pad"
+                android:layout_width="wrap_content"
+                android:layout_height="match_parent"
+                android:layout_weight="1"
+                android:insetLeft="0dp"
+                android:insetRight="3dp"
+                android:onClick="padButtonClick"
+                android:text="@string/pad7" />
+
+            <Button
+                android:id="@+id/padBtn8"
+                style="@style/Ctrl.Button.Pad"
+                android:layout_width="wrap_content"
+                android:layout_height="match_parent"
+                android:layout_weight="1"
+                android:insetLeft="3dp"
+                android:insetRight="3dp"
+                android:onClick="padButtonClick"
+                android:text="@string/pad8" />
+
+            <Button
+                android:id="@+id/padBtn9"
+                style="@style/Ctrl.Button.Pad"
+                android:layout_width="wrap_content"
+                android:layout_height="match_parent"
+                android:layout_weight="1"
+                android:insetLeft="3dp"
+                android:insetRight="0dp"
+                android:onClick="padButtonClick"
+                android:text="@string/pad9" />
+        </LinearLayout>
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_weight="2"
+            android:orientation="horizontal"
+            android:weightSum="3">
+
+            <Button
+                android:id="@+id/padBtnSeparator"
+                style="@style/Ctrl.Button.Pad"
+                android:layout_width="wrap_content"
+                android:layout_height="match_parent"
+                android:layout_weight="1"
+                android:insetLeft="0dp"
+                android:insetRight="3dp"
+                android:onClick="padButtonClick"
+                android:text="@string/padSeparator" />
+
+            <Button
+                android:id="@+id/padBtn0"
+                style="@style/Ctrl.Button.Pad"
+                android:layout_width="wrap_content"
+                android:layout_height="match_parent"
+                android:layout_weight="1"
+                android:insetLeft="3dp"
+                android:insetRight="3dp"
+                android:onClick="padButtonClick"
+                android:text="@string/pad0" />
+
+            <Button
+                android:id="@+id/padBtnK"
+                style="@style/Ctrl.Button.Pad"
+                android:layout_width="wrap_content"
+                android:layout_height="match_parent"
+                android:layout_weight="1"
+                android:insetLeft="3dp"
+                android:insetRight="0dp"
+                android:text="@string/padK" />
+        </LinearLayout>
+
+        <Button
+            android:id="@+id/padSubmit"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_weight="3"
+            android:text="Button" />
+
+    </LinearLayout>
+
+</androidx.constraintlayout.widget.ConstraintLayout>
